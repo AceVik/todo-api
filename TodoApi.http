@@ -1,0 +1,7 @@
+@TodoApi_HostAddress = http://0.0.0.0:5000
+
+GET {{TodoApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+

@@ -1,0 +1,17 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.csproj.user
+
+# Visual Studio
+.vs/
+*.vscode/
+
+# Rider
+.idea/
+
+# OS-spezifische Dateien
+.DS_Store
+Thumbs.db
