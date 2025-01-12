@@ -40,7 +40,8 @@ Starte die API mit dem folgenden Befehl:
 dotnet run
 ```
 
-Die API ist dann erreichbar unter `http://127.0.0.1:5080` oder im Android-Emulator unter `http://10.0.2.2:5080`
+Die API ist dann erreichbar unter `http://127.0.0.1:5080` 
+oder im Android-Emulator unter `http://10.0.2.2:5080`
 
 ## Unit-Tests Ausführen
 Führe die Unit-Tests mit folgendem Befehl aus:
@@ -50,13 +51,16 @@ dotnet test
 ```
 
 ## API-Endpunkte
+OpenAPI YAML Spezifikation ist erreichbar unter 
+`http://127.0.0.1:5080/openapi/v1.json`
+
 ### GET `/api/ToDoItems`
 - **Beschreibung:** Alle ToDo-Items abrufen.
 - **Parameter (optional):**
    - `filter (int)`
      - `0` - Alle
-     - `1` - Offene
-     - `2` - Abgeschlossene
+     - `1` - Offene (isCompleted = false)
+     - `2` - Abgeschlossene (isCompleted = true)
 - **Response:**
   ```json
   [{

@@ -9,7 +9,7 @@ namespace TodoApi.Tests
         public static ToDoContext GetInMemoryDbContext()
         {
             var options = new DbContextOptionsBuilder<ToDoContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()) // Jeder Test erhält eine neue Datenbank
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
             var context = new ToDoContext(options);
